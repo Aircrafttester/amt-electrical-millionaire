@@ -1,1 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>AMT Electrical Millionaire</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <h1 class="title">AMT Electrical Millionaire</h1>
+
+        <!-- Question Area -->
+        <div id="question-box">
+            <p id="question-text">Loading question...</p>
+        </div>
+
+        <!-- Answer Buttons -->
+        <div id="answers">
+            <button class="answer-btn" id="A" data-letter="A">A:</button>
+            <button class="answer-btn" id="B" data-letter="B">B:</button>
+            <button class="answer-btn" id="C" data-letter="C">C:</button>
+            <button class="answer-btn" id="D" data-letter="D">D:</button>
+        </div>
+
+        <!-- Lifelines -->
+        <div id="lifelines">
+            <button id="lifeline-5050" class="lifeline-btn">50/50</button>
+            <button id="lifeline-audience" class="lifeline-btn">Ask the Audience</button>
+            <button id="lifeline-friend" class="lifeline-btn">Phone a Friend</button>
+        </div>
+
+        <p id="lifeline-result"></p>
+        <p id="status"></p>
+
+        <!-- Restart Button -->
+        <button id="restart-btn" class="hidden">Restart Game</button>
+
+        <!-- Money Ladder -->
+        <ul id="money-ladder"></ul>
+
+    </div>
+
+    <!-- Sounds -->
+    <audio id="sound-correct" src="correct.mp3"></audio>
+    <audio id="sound-wrong" src="wrong.mp3"></audio>
+    <audio id="sound-final" src="final.mp3"></audio>
+
+    <!-- Scripts -->
+    <script src="questions.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
 
