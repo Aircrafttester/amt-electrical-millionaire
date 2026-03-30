@@ -1,1 +1,174 @@
+/* ============================
+   GENERAL LAYOUT
+============================ */
+body {
+    background: #0a0f24;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ============================
+   TITLE
+============================ */
+.title {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    color: #00d4ff;
+    text-shadow: 0 0 10px #00d4ff;
+}
+
+/* ============================
+   QUESTION BOX
+============================ */
+#question-box {
+    background: #111a3a;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #00d4ff;
+    margin-bottom: 20px;
+}
+
+#question-text {
+    font-size: 1.3rem;
+}
+
+/* ============================
+   ANSWER BUTTONS
+============================ */
+#answers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.answer-btn {
+    padding: 15px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    border: 2px solid #00d4ff;
+    background: #0d1533;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.answer-btn:hover {
+    background: #12204d;
+}
+
+.answer-btn.correct {
+    background: #0f8f00;
+    border-color: #00ff00;
+}
+
+.answer-btn.wrong {
+    background: #8f0000;
+    border-color: #ff0000;
+}
+
+/* ============================
+   LIFELINES
+============================ */
+#lifelines {
+    margin: 20px 0;
+}
+
+.lifeline-btn {
+    padding: 10px 20px;
+    margin: 5px;
+    background: #1a2758;
+    border: 2px solid #00d4ff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.lifeline-btn:hover {
+    background: #22306b;
+}
+
+.lifeline-btn:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* ============================
+   STATUS TEXT
+============================ */
+#status {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+#lifeline-result {
+    margin-top: 10px;
+    font-size: 1rem;
+    color: #00d4ff;
+}
+
+/* ============================
+   RESTART BUTTON
+============================ */
+#restart-btn {
+    padding: 12px 25px;
+    margin-top: 20px;
+    background: #004aad;
+    border: 2px solid #00d4ff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+
+#restart-btn:hover {
+    background: #005fe0;
+}
+
+.hidden {
+    display: none;
+}
+
+/* ============================
+   MONEY LADDER
+============================ */
+#money-ladder {
+    list-style: none;
+    padding: 0;
+    margin-top: 30px;
+    text-align: left;
+}
+
+#money-ladder li {
+    padding: 8px 12px;
+    margin: 4px 0;
+    background: #0d1533;
+    border: 1px solid #00d4ff;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#money-ladder li.current {
+    background: #004aad;
+    border-color: #00aaff;
+    font-weight: bold;
+}
+
+#money-ladder li.past {
+    opacity: 0.5;
+}
 
